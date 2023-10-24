@@ -4,11 +4,23 @@
 @import url("header.css");
 @import url("footer.css");
 @import url("font.css");
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline-style: none;
+}
+a {
+  color: #111;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: auto;
 }
 html {
   font-size: 10px;
@@ -21,10 +33,4 @@ body {
   line-height: 1;
   letter-spacing: -0.64px;
   word-break: keep-all;
-}
-header a {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: auto;
-  padding-right: auto;
 }
