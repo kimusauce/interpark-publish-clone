@@ -1,39 +1,76 @@
-.visual {
-  padding-top: 30px;
-  padding-bottom: 80px;
+.event {
+  padding-top: 0;
+  padding-bottom: 90px;
   position: relative;
-  /* background-color: green; */
 }
-.visual-inner {
+.event-inner {
   margin: 0 auto;
   position: relative;
   width: 1280px;
-  height: 345px;
 }
+.event-header {
+  position: relative;
+}
+.event-header-title-txt {
+  margin: 10px;
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+.event-header-sub-txt {
+  display: block;
+  position: relative;
+  font-size: 1.8rem;
+  color: #a7a9a7;
+  text-align: center;
+}
+.event-main {
+  padding: 25px 0;
+  position: relative;
+}
+.event-category {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.event-list {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+}
+
+.event-list li {
+  display: flex;
+  position: relative;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
 }
-.visual-slide {
+.event-slide-wrapper {
+  margin-top: 30px;
 }
-.visual-slide-item {
+.event-slide-item {
   position: relative;
-  width: 628px;
+  width: 355px;
 }
-/* ff */
-.visual-slide-item a {
+.event-slide-item a {
   display: block;
   overflow: hidden;
   position: relative;
   width: 100%;
   border-radius: 13px;
 }
-.visual-slide-item a img {
+.event-slide-item a img {
   display: block;
   position: relative;
   width: 100%;
 }
-.visual-slide-prev::before {
+.event-slide-prev::before {
   content: "";
   position: relative;
   margin: 0 auto;
@@ -43,7 +80,7 @@
   background: url("../images/slider_arrow.svg") no-repeat center;
   transform: rotateY(180deg);
 }
-.visual-slide-next::before {
+.event-slide-next::before {
   content: "";
   position: relative;
   margin: 0 auto;
@@ -53,7 +90,7 @@
   background: url("../images/slider_arrow.svg") no-repeat center;
   /* transform: rotateY(180deg); */
 }
-.visual-slide-prev {
+.event-slide-prev {
   transform: translateX(-50%) translateY(-50%);
   border: 1px solid #c9c9c9;
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
@@ -67,7 +104,7 @@
   cursor: pointer;
   border-radius: 50%;
 }
-.visual-slide-next {
+.event-slide-next {
   transform: translateX(50%) translateY(-50%);
   border: 1px solid #c9c9c9;
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
@@ -80,4 +117,8 @@
   background-color: rgba(255, 255, 255, 0.4);
   cursor: pointer;
   border-radius: 50%;
+}
+
+.event-footer {
+  position: relative;
 }
